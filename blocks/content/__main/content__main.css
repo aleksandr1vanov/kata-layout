@@ -1,0 +1,27 @@
+.content__main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+@media (min-width: 768px) and (min-height: 504px) {
+    .content__main{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 48px;
+            padding: 0 24px;
+        }
+}
+@media (min-width: 1120px) and (min-height: 535px) {
+    .content__main{
+                align-items: start;
+                padding-left: 34px;
+                justify-content: center;
+            }
+}
+@media (min-width: 1600px) {
+    .content__main{
+        column-gap: 150px;
+    }
+}

@@ -1,0 +1,511 @@
+@import url(blocks/page/__body/page__body.css);
+@import url(blocks/header/header.css);
+@import url(blocks/btn/btn.css);
+@import url(blocks/header/__menu/header__menu.css);
+@import url(blocks/header/__menu--shadow--after/header__menu--shadow--after.css);
+@import url(blocks/header/__left-menu/header__left-menu.css);
+@import url(blocks/left-menu/__burger/left-menu__burger.css);
+@import url(blocks/left-menu/__burger-img/left-menu__burger-img.css);
+@import url(blocks/left-menu/__cpslogo/left-menu__cpslogo.css);
+@import url(blocks/header/__right-menu/header__right-menu.css);
+@import url(blocks/header/__tablet-menu/header__tablet-menu.css);
+@import url(blocks/header/__basic-menu/header__basic-menu.css);
+@import url(blocks/header/__basic-menu--divider--before/header__basic-menu--divider--before.css);
+@import url(blocks/basic-menu/basic-menu.css);
+@import url(blocks/basic-menu/__repair-btn/basic-menu__repair-btn.css);
+@import url(blocks/basic-menu/__repair-img/basic-menu__repair-img.css);
+@import url(blocks/basic-menu/__checkstatus-btn/basic-menu__checkstatus-btn.css);
+@import url(blocks/basic-menu/__checkstatus-img/basic-menu__checkstatus-img.css);
+@import url(blocks/content/__basic-menu/content__basic-menu.css);
+@import url(blocks/content/__title-wrapper/content__title-wrapper.css);
+@import url(blocks/content/__title/content__title.css);
+@import url(blocks/title/title.css);
+@import url(blocks/content/__title--highlight--before/content__title--highlight--before.css);
+@import url(blocks/nav/__list/nav__list.css);
+@import url(blocks/nav/__btn/nav__btn.css);
+@import url(blocks/nav-button/nav-button.css);
+@import url(blocks/nav-button--hover/nav-button--hover.css);
+@import url(blocks/content/__main/content__main.css);
+@import url(blocks/description/description.css);
+@import url(blocks/description/__text-wrapper/description__text-wrapper.css);
+@import url(blocks/description/__basic-text/description__basic-text.css);
+@import url(blocks/description/__add-text/description__add-text.css);
+@import url(blocks/description/__readmore-btn/description__readmore-btn.css);
+@import url(blocks/description/__readmore-btn--before--expand/description__readmore-btn--before--expand.css);
+@import url(blocks/btn-readmore/btn-readmore.css);
+@import url(blocks/image/__cps/image__cps.css);
+@import url(blocks/left-menu/__burger--divider-display768--after/left-menu__burger--divider-display768--after.css);
+@import url(blocks/tablet-menu/__btn/tablet-menu__btn.css);
+@import url(blocks/tablet-menu/__icon/tablet-menu__icon.css);
+
+@font-face {
+    font-family: "TTLakes-Bold";
+    src: url(fonts/TTLakes/TTLakes-Bold.ttf);
+}
+
+@font-face {
+    font-family: "TTLakes-Light";
+    src: url(fonts/TTLakes/TTLakes-Light.ttf);
+}
+
+@font-face {
+    font-family: "TTLakes-Medium";
+    src: url(fonts/TTLakes/TTLakes-Medium.ttf);
+}
+
+
+
+
+/*    All styles
+
+
+
+.page__body{       
+    margin: 0;
+    background-color:rgb(248, 248, 248);
+    width: 100%;
+    min-width: 320px;
+}
+
+.header{    
+    background-color: white;
+   
+}
+
+.btn{       
+    border: none;             
+    background: none;
+}
+
+
+.header__menu{      
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 18px 16px;
+    margin-bottom: 24px;
+    
+}
+
+
+.header__menu--shadow--after{     
+    border-bottom: 1px #D9FFF5 solid;
+}
+
+
+.header__left-menu{   
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    
+}
+.left-menu__burger{    
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.left-menu__burger-img{  
+    display: block;
+}
+
+.left-menu__cpslogo{  
+    display: block;
+}
+
+
+.header__right-menu{  
+    display: flex;     
+}
+
+
+.header__tablet-menu{    
+    display: none;  
+}
+
+
+.header__basic-menu{
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+
+.header__basic-menu--divider--before::before{
+    content: url(elements/divider.svg);
+    height: 32px;
+    margin-right: 4px;
+    
+}
+
+
+
+.basic-menu{
+    font-family: "TTLakes-Medium";
+    color: rgb(27, 28, 33);
+    font-size: 16px;
+    font-weight: bolder;   
+    line-height: 24px; 
+    letter-spacing: -0.2px;
+    text-align: right;
+}
+
+
+.basic-menu__repair-btn{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+
+.basic-menu__repair-img{
+    display: block;
+}
+
+
+.basic-menu__checkstatus-btn{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+.basic-menu__checkstatus-img{
+    display: block;
+}
+
+.content__basic-menu{
+    display: none;
+}
+
+
+
+.content__title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+
+.content__title{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-family: "TTLakes-Bold";
+    color: rgb(27, 28, 33);
+    font-size: 28px;
+    font-weight: bolder;   
+    line-height: 40px; 
+    letter-spacing: -0.6px;
+    text-align: left;
+}
+
+
+.content__title--highlight--before::before{
+    content: url(elements/highlight.svg);
+    height: 40px;
+    margin-right: 12px;
+}
+
+
+
+
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    overflow-x: scroll;
+    column-gap: 10px;
+    text-align: center;
+    white-space: nowrap;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+    margin-bottom: 26px;
+ }
+
+
+ .nav__btn{
+    height: 40px;
+    width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+     }
+
+ .nav-button{
+    border: 2px solid transparent;
+    
+    background: none;
+    font-family: "TTLakes-Medium";
+    color: rgb(126, 126, 130);
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+
+}
+
+@media (hover: hover) {
+    .nav-button--hover:hover{
+        border: 2px solid rgb(184, 255, 236);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    
+    }
+}
+@media (hover: none) {
+    .nav-button--hover:active{
+        border: 2px solid rgb(184, 255, 236);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    
+    }
+}
+
+
+
+.content__main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.description{
+    color: rgb(27, 28, 33);
+    font-family: "TTLakes-Medium";
+    font-size: 14px;   
+    font-weight: 500;  
+    line-height: 18px;
+    letter-spacing: 0.02px;  
+    text-align: left;
+}
+
+.description__text-wrapper{
+width: auto; 
+max-width: 550px;    
+height: 90px;
+overflow: hidden;
+padding: 0 16px 0 20px;
+margin-bottom: 16px;
+}
+
+.description__basic-text{
+    margin-top: 0;
+
+}
+
+.description__add-text{
+    margin-top: 0;
+}
+
+
+
+
+.description__readmore-btn{
+    display: flex;
+    align-items:start;
+    gap: 8px;
+    padding: 0;
+    padding-left: 20px;
+}
+.description__readmore-btn--before--expand::before{
+    content: url(elements/expand.svg);
+    
+    
+}
+.btn-readmore{                    
+    border: none;
+    background: none;
+    color: rgb(27, 28, 33);
+    font-family: "TTLakes-Medium";
+    font-size: 16px;      
+    font-weight: 600;     
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+}
+
+
+/
+
+
+.image__cps{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) and (min-height: 504px){
+
+    .header__menu{            
+        padding: 18px 24px;
+    }
+
+    
+
+    .header__tablet-menu{     
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+    }
+
+    .left-menu__burger--divider-display768--after::after{
+        content: url(elements/divider.svg); 
+        height: 32px; 
+        margin-right: 4px;
+        margin-left: 20px;
+    }
+
+    .tablet-menu__btn{   
+        margin: 0;
+        padding: 0;
+    }
+
+    
+
+    .tablet-menu__icon{    
+        display: block;
+    }
+    
+    .header__basic-menu--divider--before::before{
+        margin-left: 20px;
+    }
+
+
+    .content__title-wrapper{
+        margin-bottom: 32px;
+    }
+
+    .content__title--highlight--before::before{
+        margin-right: 20px;
+    }
+
+    .content__main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 48px;
+        padding: 0 24px;
+    }
+
+    .description__text-wrapper{
+        width: 312px;
+        height: 160px;
+        padding: 0;
+        margin-bottom: 10px;
+        }
+
+        .description__basic-text{
+            margin-bottom: 40px;
+        }
+    
+        .description{
+            line-height: 20px;
+        }
+
+        
+
+        .nav__list{
+            margin-bottom: 32px;
+        }
+
+}
+
+@media (min-width: 1120px) and (min-height: 535px){
+    .header__menu{       
+        display: none;       
+    }
+
+    .content__title-wrapper{
+        padding-top: 42px;
+        margin-bottom: 10px;
+    }
+
+    .content__title--highlight--before::before{
+        margin-right: 30px;
+    }
+
+    .content__basic-menu{
+        display: flex;
+        column-gap: 32px;
+        padding-right: 32px;
+    }
+
+    .nav__list{
+        overflow-x: hidden;
+        padding-left: 32px;
+        padding-right: 37px;
+        column-gap: 0;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+     }
+
+     .description__text-wrapper{
+        width: 490px;
+        margin-bottom: 14px;
+        }
+
+        .description__basic-text{
+            margin-bottom: 20px;
+        }
+
+        .content__main{
+            align-items: start;
+            padding-left: 34px;
+            justify-content: center;
+        }
+
+        .description__readmore-btn{
+            padding-left: 0;
+        }
+}
+
+@media (min-width: 1200px){
+
+    .page__body{
+        max-width: 1600px;
+    }
+    .nav__list{
+        margin-bottom: 50px;
+    }
+    .content__title-wrapper{
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1600px){   
+    .page__body{
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.content__main{
+    column-gap: 150px;
+}
+.content__title-wrapper {
+    padding-top: 150px;
+
+}
+}
+
+*/
+
+

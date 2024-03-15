@@ -1,0 +1,15 @@
+.content__title--highlight--before::before{
+    content: url(../../../elements/highlight.svg);
+    height: 40px;
+    margin-right: 12px;
+}
+@media (min-width: 768px) and (min-height: 504px) {
+    .content__title--highlight--before::before{
+            margin-right: 20px;
+        }
+}
+@media (min-width: 1120px) and (min-height: 535px) {
+    .content__title--highlight--before::before{
+            margin-right: 30px;
+        }
+}

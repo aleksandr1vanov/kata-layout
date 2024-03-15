@@ -1,0 +1,18 @@
+.header__menu{      
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 18px 16px;
+    margin-bottom: 24px;
+    
+}
+@media (min-width: 768px) and (min-height: 504px) {
+    .header__menu{            
+            padding: 18px 24px;
+        }
+}
+@media (min-width: 1120px) and (min-height: 535px) {
+    .header__menu{       
+            display: none;       
+        }
+}

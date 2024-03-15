@@ -1,0 +1,10 @@
+.content__basic-menu{
+    display: none;
+}
+@media (min-width: 1120px) and (min-height: 535px) {
+    .content__basic-menu{
+            display: flex;
+            column-gap: 32px;
+            padding-right: 32px;
+        }
+}

@@ -1,0 +1,5 @@
+.description__readmore-btn--before--expand::before{
+    content: url(../../../elements/expand.svg);
+    
+    
+}

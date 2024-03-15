@@ -1,0 +1,11 @@
+.header__basic-menu--divider--before::before{
+    content: url(../../../elements/divider.svg);
+    height: 32px;
+    margin-right: 4px;
+    
+}
+@media (min-width: 768px) and (min-height: 504px) {
+    .header__basic-menu--divider--before::before{
+            margin-left: 20px;
+        }
+}

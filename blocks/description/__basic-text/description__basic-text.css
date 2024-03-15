@@ -1,0 +1,14 @@
+.description__basic-text{
+    margin-top: 0;
+
+}
+@media (min-width: 768px) and (min-height: 504px) {
+    .description__basic-text{
+                margin-bottom: 40px;
+            }
+}
+@media (min-width: 1120px) and (min-height: 535px) {
+    .description__basic-text{
+                margin-bottom: 20px;
+            }
+}

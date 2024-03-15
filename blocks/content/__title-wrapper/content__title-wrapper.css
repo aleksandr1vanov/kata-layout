@@ -1,0 +1,27 @@
+.content__title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+@media (min-width: 768px) and (min-height: 504px) {
+    .content__title-wrapper{
+            margin-bottom: 32px;
+        }
+}
+@media (min-width: 1120px) and (min-height: 535px) {
+    .content__title-wrapper{
+            padding-top: 42px;
+            margin-bottom: 10px;
+        }
+}
+@media (min-width: 1200px) {
+    .content__title-wrapper{
+            margin-bottom: 50px;
+        }
+}
+@media (min-width: 1600px) {
+    .content__title-wrapper {
+        padding-top: 150px;
+    
+    }
+}

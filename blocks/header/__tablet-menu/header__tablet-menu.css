@@ -1,0 +1,10 @@
+.header__tablet-menu{    
+    display: none;  
+}
+@media (min-width: 768px) and (min-height: 504px) {
+    .header__tablet-menu{     
+            display: flex;
+            column-gap: 16px;
+            align-items: center;
+        }
+}

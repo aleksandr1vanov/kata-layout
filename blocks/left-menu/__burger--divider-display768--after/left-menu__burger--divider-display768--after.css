@@ -1,0 +1,8 @@
+@media (min-width: 768px) and (min-height: 504px) {
+    .left-menu__burger--divider-display768--after::after{
+            content: url(../../../elements/divider.svg);  
+            height: 32px; 
+            margin-right: 4px;
+            margin-left: 20px;
+        }
+}

@@ -1,0 +1,5 @@
+.header__basic-menu{
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}

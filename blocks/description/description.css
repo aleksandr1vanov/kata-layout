@@ -1,0 +1,14 @@
+.description{
+    color: rgb(27, 28, 33);
+    font-family: "TTLakes-Medium";
+    font-size: 14px;   /*pixso 14px*/
+    font-weight: 500;  /*pixso 400*/
+    line-height: 18px;
+    letter-spacing: 0.02px;  /*pixso 0.2px*/
+    text-align: left;
+}
+@media (min-width: 768px) and (min-height: 504px) {
+    .description{
+                line-height: 20px;
+            }
+}

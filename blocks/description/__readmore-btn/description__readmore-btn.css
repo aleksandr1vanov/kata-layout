@@ -1,0 +1,12 @@
+.description__readmore-btn{
+    display: flex;
+    align-items:start;
+    gap: 8px;
+    padding: 0;
+    padding-left: 20px;
+}
+@media (min-width: 1120px) and (min-height: 535px) {
+    .description__readmore-btn{
+                padding-left: 0;
+            }
+}
